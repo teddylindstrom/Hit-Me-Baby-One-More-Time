@@ -50,3 +50,7 @@ def main():
         if hidden_board[guess_row][guess_col] in ["X", "H"]:
             print("You already guessed that spot.")
             continue
+        if board[guess_row][guess_col] == "S":
+            print("Hit!")
+            hidden_board[guess_row][guess_col] = "H"
+            board[guess_row][guess_col] = "H"

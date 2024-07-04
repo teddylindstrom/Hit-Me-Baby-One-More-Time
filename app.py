@@ -25,3 +25,12 @@ else:
 
 def is_valid_guess(board, row, col):
     return 0 <= row < len(board) and 0 <= col < len(board[0])
+
+def main():
+    size = 5
+    ship_length = 3
+    attempts = 10
+
+    board = create_board(size)
+    hidden_board = create_board(size)
+    board = place_ship(board, ship_length)

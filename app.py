@@ -61,3 +61,5 @@ def main():
         else:
             print("Miss!")
             hidden_board[guess_row][guess_col] = "X"
+        attempts -= 1
+        print(f"Remaining attempts: {attempts}")

@@ -34,3 +34,6 @@ def main():
     board = create_board(size)
     hidden_board = create_board(size)
     board = place_ship(board, ship_length)
+
+    print("Welcome to 'Hit Me Baby One More Time' Battleship Game!")
+    print(f"You have {attempts} attempts to sink the ship!")

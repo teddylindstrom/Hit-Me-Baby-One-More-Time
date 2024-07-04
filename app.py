@@ -11,3 +11,7 @@ def create_board(size):
 def place_ship(board, ship_length):
     direction = random.choice(["H", "V"])
     if direction == "H":
+        row = random.randint(0, len(board) - 1)
+        col = random.randint(0, len(board) - ship_length)
+        for i in range(ship_length):
+            board[row][col + i] = "S"

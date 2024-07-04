@@ -15,3 +15,10 @@ def place_ship(board, ship_length):
         col = random.randint(0, len(board) - ship_length)
         for i in range(ship_length):
             board[row][col + i] = "S"
+
+else:
+        row = random.randint(0, len(board) - ship_length)
+        col = random.randint(0, len(board) - 1)
+        for i in range(ship_length):
+            board[row + i][col] = "S"
+    return board

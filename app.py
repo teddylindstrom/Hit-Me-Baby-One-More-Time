@@ -47,3 +47,6 @@ def main():
         if not is_valid_guess(hidden_board, guess_row, guess_col):
             print("Invalid guess. Please enter numbers between 0 and 4.")
             continue
+        if hidden_board[guess_row][guess_col] in ["X", "H"]:
+            print("You already guessed that spot.")
+            continue

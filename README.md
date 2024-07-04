@@ -1,214 +1,143 @@
 # Hit-Me-Baby-One-More-Time
 A Battleship inspired text based game created for the third project of Code Institute Fullstack developer program
 
-### Visit the deployed website: ********************************
+# Hit Me Baby One More Time
 
-## CONTENTS
+This game is part as one of the projects I myself am conducting during my time studying to be a Fullstack Developer at Code Insitutte. Therefore I am making a Battleship game in Python code that I'm calling "Hit Me Baby One More Time". The Player competes against the 
 
-* [Happy Path Through Game](#happy-path-through-game)
+For example; Love Running is a site that hopes to help keep people motivated to meet up for runs on a regular basis in Dublin, Ireland. The site will be targeted toward runners who are looking for a way to socialise and keep themselves fit. Love Running will be useful for runners to see exactly when and where they should be to join the running club. 
 
-* [User Stories](#user-stories)
-   * [MVP](#mvp)
-   * [Add-ons](#add-ons)
+![Responsice Mockup](https://github.com/lucyrush/readme-template/blob/master/media/love_running_mockup.png)
 
-* [Design](#design)
-  * [Flowchart](#flowchart)
-  * [Features](#features)
+## Features 
 
-* [Technologies Used](#technologies-used)
-  * [Language Used](#language-used)
-  * [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
+In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
-* [Iteration over starting code](#iteration-over-starting-code)
+### Existing Features
 
-* [Deployment & Local Development](#deployment--local-development)
-  * [Deployment](#deployment)
-  * [Local Development](#local-development)
-    * [How to Fork](#how-to-fork)
-    * [How to Clone](#how-to-clone)
+- __Navigation Bar__
 
-* [Testing](#testing)
-* [Bug Fixes](#bug-fixes)
-  
-* [Credits](#credits)
-  * [Code Used](#code-used)
-  * [Content](#content)
-  * [Acknowledgments](#acknowledgments)
+  - Featured on all three pages, the full responsive navigation bar includes links to the Logo, Home page, Gallery and Sign Up page and is identical in each page to allow for easy navigation.
+  - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
 
-- - -
+![Nav Bar](https://github.com/lucyrush/readme-template/blob/master/media/love_running_nav.png)
 
-## Happy Path Through Game
-For testing purposes, one of the paths for succeeding is simply by inputting 1 for each option. To get to the unsuccessful ending, input 1, 1, 2 in that order.
+- __The landing page image__
 
-# User Stories
-MVP
-The users should be able to:
+  - The landing includes a photograph with text overlay to allow the user to see exactly which location this site would be applicable to. 
+  - This section introduces the user to Love Running with an eye catching animation to grab their attention
 
-## Start the game when typing "Start".
-Not have to worry about capitalizing or lowercase when typing.
-Receive the next part in the story depending on the input choices.
-Reach the end of the game through one of the paths chosen, by either succeeding or failing in the quest.
-## Add-ons
-After the essentials are covered I would like the user to be able to:
+![Landing Page](https://github.com/lucyrush/readme-template/blob/master/media/love_running_landing.png)
 
-Have more options/alternate endings to the game.
-Have in-game items to interact with.
-Print out the choices made onto a Google doc/sheet so that the user can see their choices of play.
-Enjoy a more visually exciting experience by adding some styling and images. 
-## Design
-The design is structural in nature as opposed to visual, as although I know the Python terminal can be styled, the time I have to implement this project requires full focus on the functionality only.
+- __Club Ethos Section__
 
-## Flowchart
-Since the game changes depending on the users' choices, I wanted to lay out the step-by-step logic needed to reach each ending of the game. Although there are only two outcomes there are multiple ways to get there.
+  - The club ethos section will allow the user to see the benefits of joining the Love Running meetups, as well as the benefits of running overall. 
+  - This user will see the value of signing up for the Love Running meetups. This should encourage the user to consider running as their form of exercise. 
 
-## Input/step check
+![Club Ethos](https://github.com/lucyrush/readme-template/blob/master/media/love_running_ethos.png)
 
-For each step, the user receives a prompt, writes their input, and the input is cross-checked against the code for validation. If the user input is invalid, they are prompted again to input on the same step. Once valid input is received, the user goes on to the next step.
+- __Meetup Times section__
 
-The flow of the game has 8 possible outcomes, 4 successful adventures, and 4 unsuccessful. Below is a basic map of the journey which can be followed to see all alternatives and their outcomes. A link to the Lucidchart can be found here The screenshot is below:
+  - This section will allow the user to see exactly when the meetups will happen, where they will be located and how long the run will be in kilometers. 
+  - This section will be updated as these times change to keep the user up to date. 
 
-****** SCREENSHOT **********
+![Meetup Times](https://github.com/lucyrush/readme-template/blob/master/media/love_running_times.png)
 
-# pp3_game_step_flow_3
+- __The Footer__ 
 
-## Features
-The user can add a name of their choosing to give them a personalised welcome to the game:
+  - The footer section includes links to the relevant social media sites for Love Running. The links will open to a new tab to allow easy navigation for the user. 
+  - The footer is valuable to the user as it encourages them to keep connected via social media
 
-********* game screenshot ********************
+![Footer](https://github.com/lucyrush/readme-template/blob/master/media/love_running_footer.png)
 
-The user is then taken through a journey with explanation texts and requests for the user to choose which path they want to take. Choosing different paths can lead to different outcomes.
+- __Gallery__
 
-## game choices
-******** screenshot **********
-At the end of the user's journey, they are presented with a final text depending on their success or not in catching the required object to "win".
+  - The gallery will provide the user with supporting images to see what the meet ups look like. 
+  - This section is valuable to the user as they will be able to easily identify the types of events the organisation puts together. 
 
-At the end of the game, the users are offered to run through the game from the start if they choose.
+![Gallery](https://github.com/lucyrush/readme-template/blob/master/media/love_running_gallery.png)
 
-## Not succeeding:
+- __The Sign Up Page__
 
-game not successful
+  - This page will allow the user to get signed up to Love Running to start their running journey with the community. The user will be able specify if they would like to take part in road, trail or both types of running. The user will be asked to submit their full name and email address. 
 
-## Succeeding:
+![Sign Up](https://github.com/lucyrush/readme-template/blob/master/media/love_running_signup.png)
 
-game successful
+For some/all of your features, you may choose to reference the specific project files that implement them.
 
-# Technologies Used
-Language Used
-Python
+In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
-# Frameworks, Libraries & Programs Used
-Github - For online storage of code and deployment.
+### Features Left to Implement
 
-Picresize - Used to resize images for Readme/Testing docs.
+- Another feature idea
 
-Gitpod - For writing my code.
+## Testing 
 
-******* Heroku - For deploying my program.
+In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+
+In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+
+You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+
+If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
 
-# Iteration over starting code
-Being fairly new to coding I have my two previous projects from Code Insitute, one HTML CSS and one HTML, CSS and JavaScript to reference from. Now this project is entirely different allthough has the same structure. So I applied the same structure in the READme, based on those two. 
+### Validator Testing 
 
-## Here is the commit from my trialling of the function:
+- HTML
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
+- CSS
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
 
+### Unfixed Bugs
 
+You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed. 
 
-This process of iteration worked best for my brain to see what steps I need to take and solidify my understanding of not passing immutable data.
-
-# Deployment & Local Development
 ## Deployment
-This project was deployed at Heroku
 
-The numbers on the screenshots represent the numbers on the steps of my deployment process.
+This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
 
-To deploy this project after creating my account, I:
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab 
+  - From the source section drop-down menu, select the Master Branch
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-Went to my dashboard and clicked on the New App dropdown menu
-Clicked Create new app from the options
-heroku_deployment_step_1-2
+The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html 
 
-Named my app in the App name box
-Chose a region from the dropdown menu (and accidentally chose the United States for this one)
-Clicked Create app
-heroku_deployment_step_2-5
 
-Once the app was made I went to my dashboard where I can see my apps.
+## Credits 
 
-Clicked on the relevant app
-heroku_deployment_step_6
+In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
 
-7-8. From here, I went to settings, then to the Config Vars. I added the PORT key and a value of 8000. This was a requirement by Code Institute to ensure there were no issues caused by not having it.
+You can break the credits section up into Content and Media, depending on what you have included in your project. 
 
-I then went to Buildpacks and added Python, and then NodeJS.
-heroku_deployment_step_7-9
+### Content 
 
-Then I clicked the Deploy tab. Here I connected my GitHub account with the repository the deployment is to select.
-After that, I chose to manually deploy my project as needed, but it's possible to set up automatic deployments if preferred.
-heroku_deployment_step_10-11
+- The text for the Home page was taken from Wikipedia Article A
+- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
+- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 
-Local Development
-How to Fork
-Should you wish to fork this repo, here is a guide on how to do that:
+### Media
 
-Firstly, go to https://github.com/emmy-codes/cat-adventures-python
+- The photos used on the home and sign up page are from This Open Source site
+- The images used for the gallery page were taken from this other open source site
 
-On the main repo page, click the Fork button near the top right corner
-fork-cat-adventures
 
-On the create a fork page, check the Owner of the repo is set to the GitHub org you wish to use, and change the name of the repo if you wish. 2a: Add a description if you want to
-Check the box here if you want to make a copy of the main branch or multiple branches (main is selected by default)
-Create the fork
-Screenshot from an old project as I cannot fork my Python project due to not having any organizations connected to my account, and presumably because this repo is already a fork of the CI template
-fork-screenshot
+Congratulations on completing your Readme, you have made another big stride in the direction of being a developer! 
 
-How to Clone
-For cloning the repo you will need:
+## Other General Project Advice
 
-The repo open
-Your IDE of choice
-On the repo page, click on the green "Code" button
-On the dropdown from the Code button, click on your chosen key (pictured here is SSH)
-Click the copy button (shown as two squares on top of one another)
-clone_step
+Below you will find a couple of extra tips that may be helpful when completing your project. Remember that each of these projects will become part of your final portfolio so it’s important to allow enough time to showcase your best work! 
 
-Open your IDE of choice and open the Terminal, or in my case, open the Terminal on your computer (I run Linux on Windows so may be slightly different for Mac/Windows users)
-Check that you're in the right folder (shown here by checking my current folder by using the input: ls
-Change as needed to reach your desired folder.
-Type (without quotation marks): "git clone" followed by your copied link from GitHub.
-You can now access the repo in your IDE if cloned directly there, or by typing (without quotation marks) "code ." in your Terminal.
-Have fun!
-git_clone_pp3
+- One of the most basic elements of keeping a healthy commit history is with the commit message. When getting started with your project, read through [this article](https://chris.beams.io/posts/git-commit/) by Chris Beams on How to Write  a Git Commit Message 
+  - Make sure to keep the messages in the imperative mood 
 
-Testing
-Please refer to the TESTING.md file for all testing carried out.
+- When naming the files in your project directory, make sure to consider meaningful naming of files, point to specific names and sections of content.
+  - For example, instead of naming an image used ‘image1.png’ consider naming it ‘landing_page_img.png’. This will ensure that there are clear file paths kept. 
 
-Bug Fixes
-The majority of the issues in my code have been due to my not completing the logic adequately. For example, when I created the start_game function I added the usual input requests and set an else to print an error message requesting the user input 1 or 2 to continue, but did not set the game to run again. I solved this by offering the input field again after printing a message to the user.
+- Do some extra research on good and bad coding practices, there are a handful of useful articles to read, consider reviewing the following list when getting started:
+  - [Writing Your Best Code](https://learn.shayhowe.com/html-css/writing-your-best-code/)
+  - [HTML & CSS Coding Best Practices](https://medium.com/@inceptiondj.info/html-css-coding-best-practice-fadb9870a00f)
+  - [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html#General)
 
-I had a huge challenge after adding user input to my game due to having a "game window" with a $ on char 79. I was trying to put together an if statement to cover all name-length eventualities without impacting the position of the final game window char. After many, many iterations my first breakthrough was getting the print to show the start of the game screen (game_screen_start) followed by the name that the user input.
-
-error_solving_progress
-
-The next iteration turned on its head: I was having too hard of a time removing spaces from the end of the string, so I decided to add space up to 77 characters and added the $ to the beginning and end.
-
-I checked the length of the name input, the length of the game screen start text, and the length of the middle text. I then deducted that length from the allowed length of 77. Or so I thought. Upon printing the alignment was completely off and I had way more white space than intended. To find out what went wrong, I printed the "calculating" variable which was over 100! I then printed "len(name)+len(game_screen_start)+len(middle_text))" and it returned around 53. The issue was precedence . I had set the calculating variable to follow the code step by step, which was throwing the result off.
-
-I solved the issue by adding extra parentheses around the calculation to gather the total length of characters to print, which could then be deducted from the allotted 77 characters.
-
-error_solving_step_3
-
-Credits
-To my classmate Ben who shared his code for review on Slack, and upon reading it gave me the idea to use just number 1 or 2 as input to help simplify and speed up my MVP.
-
-Code Used
-ASCII art is taken from ASCII art but it's unclear who the actual owner is as it's displayed identically on multiple sites. I adjusted it to have two cats for the purpose of my story.
-
-Content
-I have used OpenAI to create most of the text for me so I can focus my time on practising with the code. "We" had a little chat and went over some iterations and I'm happy that it was able to work out the structure for continuing the game, and then I was able to build the flow chart and thus work on the code structure from there.
-
-Acknowledgments
-I would like to acknowledge the following people:
-
-My partner for his extra help looking after our little one so I could focus on getting as much learning in as possible, and for providing his insight into logical thinking and good practices for breaking down a problem into manageable chunks. 🥰
-
-Family and friends on Facebook for user testing my game and providing feedback!
+Getting started with your Portfolio Projects can be daunting, planning your project can make it a lot easier to tackle, take small steps to reach the final outcome and enjoy the process! 

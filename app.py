@@ -22,3 +22,6 @@ else:
         for i in range(ship_length):
             board[row + i][col] = "S"
     return board
+
+def is_valid_guess(board, row, col):
+    return 0 <= row < len(board) and 0 <= col < len(board[0])

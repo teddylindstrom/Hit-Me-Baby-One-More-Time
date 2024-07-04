@@ -69,3 +69,6 @@ def main():
     print_board(hidden_board)
     print("The ship was at:")
     print_board(board)
+
+if __name__ == "__main__":
+    main()

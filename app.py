@@ -43,3 +43,7 @@ def main():
         print_board(hidden_board)
         guess_row = int(input("Guess Row (0-4): "))
         guess_col = int(input("Guess Col (0-4): "))
+
+        if not is_valid_guess(hidden_board, guess_row, guess_col):
+            print("Invalid guess. Please enter numbers between 0 and 4.")
+            continue

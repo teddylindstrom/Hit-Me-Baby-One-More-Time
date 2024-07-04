@@ -37,3 +37,9 @@ def main():
 
     print("Welcome to 'Hit Me Baby One More Time' Battleship Game!")
     print(f"You have {attempts} attempts to sink the ship!")
+
+    while attempts > 0:
+        print("\nCurrent Board:")
+        print_board(hidden_board)
+        guess_row = int(input("Guess Row (0-4): "))
+        guess_col = int(input("Guess Col (0-4): "))

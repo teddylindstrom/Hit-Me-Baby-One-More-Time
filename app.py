@@ -63,3 +63,9 @@ def main():
             hidden_board[guess_row][guess_col] = "X"
         attempts -= 1
         print(f"Remaining attempts: {attempts}")
+        print("Game Over! You've run out of attempts.")
+    
+    print("Final Board:")
+    print_board(hidden_board)
+    print("The ship was at:")
+    print_board(board)

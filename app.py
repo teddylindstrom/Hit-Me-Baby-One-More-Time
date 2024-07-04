@@ -54,3 +54,7 @@ def main():
             print("Hit!")
             hidden_board[guess_row][guess_col] = "H"
             board[guess_row][guess_col] = "H"
+            if all(board[row][col] != "S" for row in range(size) for col in range(size)):
+                print("Congratulations! You've sunk the ship!")
+                print_board(hidden_board)
+                return

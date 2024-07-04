@@ -58,3 +58,6 @@ def main():
                 print("Congratulations! You've sunk the ship!")
                 print_board(hidden_board)
                 return
+        else:
+            print("Miss!")
+            hidden_board[guess_row][guess_col] = "X"

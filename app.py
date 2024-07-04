@@ -7,3 +7,7 @@ def print_board(board):
 
 def create_board(size):
     return [["O"] * size for _ in range(size)]
+
+def place_ship(board, ship_length):
+    direction = random.choice(["H", "V"])
+    if direction == "H":

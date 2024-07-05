@@ -1,4 +1,3 @@
-Hit Me Baby One More Time
 import random
 
 def print_board(board):
@@ -16,7 +15,7 @@ def place_ship(board, ship_length):
         for i in range(ship_length):
             board[row][col + i] = "S"
 
-else:
+    else:
         row = random.randint(0, len(board) - ship_length)
         col = random.randint(0, len(board) - 1)
         for i in range(ship_length):
@@ -62,8 +61,12 @@ def main():
             print("Miss!")
             hidden_board[guess_row][guess_col] = "X"
         attempts -= 1
-        print(f"Remaining attempts: {attempts}")
-        print("Game Over! You've run out of attempts.")
+        if attempts == 0:
+            print("Game Over! You've run out of attempts.")
+        else:
+            print(f"Remaining attempts: {attempts}")
+        
+        
     
     print("Final Board:")
     print_board(hidden_board)

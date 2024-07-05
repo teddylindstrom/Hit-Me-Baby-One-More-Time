@@ -1,12 +1,25 @@
 import random
 
+#Game board size#
 def print_board(board):
     for row in board:
         print(" ".join(row))
 
+#The size of the board, rows, columns#
 def create_board(size):
     return [["O"] * size for _ in range(size)]
 
+
+    """
+    Randomly places a ship on the game board.
+
+    Args:
+        board (list of list of str): The game board represented as a 2D list.
+        ship_length (int): The length of the ship to be placed.
+
+    Returns:
+        list of list of str: The updated game board with the ship placed.
+    """
 def place_ship(board, ship_length):
     direction = random.choice(["H", "V"])
     if direction == "H":

@@ -1,8 +1,9 @@
 from colorama import init
-init()
+        init ()
+
 from colorama import Fore, Back, Style
-print(Fore.RED + 'some red text')
-print(Back.GREEN + 'and with a green background')
-print(Style.DIM + 'and in dim text')
-print(Style.RESET_ALL)
-print('back to normal now')
+    print (Fore.RED + 'if Miss')
+    print (Back.GREEN + 'if Hit')
+    print (Style.DIM + 'if guessed already')
+    print (Style.RESET_ALL)
+    print ('back to normal now')

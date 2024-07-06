@@ -1,17 +1,25 @@
 # Hit-Me-Baby-One-More-Time
 A Battleship inspired text based game created for the third project of Code Institute Fullstack developer program
 
+# Visit the deployed app: 
+https://hitmebabyonemoretime-2b638d3ade8e.herokuapp.com/ 
+
 # Hit Me Baby One More Time
 
 This game is part as one of the projects I myself am conducting during my time studying to be a Fullstack Developer at Code Insitutte. Therefore I am making a Battleship game in Python code that I'm calling "Hit Me Baby One More Time". The Player writes a suggested move and gets a response. 
 
+# Flowchart
+Since the game changes depending on the users' choices, I wanted to lay out the step-by-step logic needed to reach each ending of the game. Although there are only two outcomes there are multiple ways to get there.
+Now I did
+
 ## Features 
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+This project is a Python command-line implementation of the classic Battleship game. The game is played on a 5x5 grid, where a single ship of length 3 is placed randomly either horizontally or vertically. The player has 10 attempts to guess the location of the ship and sink it by hitting all its parts.
 
 ### Features Left to Implement
 
-- Another feature idea
+Deployment from Heroku, since the build wont work and I can't figure out why it's failing.
+It wouldf also be nice with some more visual aid
 
 ## Testing 
 
@@ -44,14 +52,14 @@ This section should describe the process you went through to deploy the project 
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html 
+The live link can be found here - https://hitmebabyonemoretime-2b638d3ade8e.herokuapp.com/
 
 
 ## Credits 
 
-In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
+I would like to thank my mentor Moritz, my Swedish community member Sara for supporting me throughout the project. Huge kudos! I wouldn't have come this far without you. 
 
-You can break the credits section up into Content and Media, depending on what you have included in your project. 
+I have also found it helpful to use Chat GPT as a personal tutor to explain matters I don't quite grasp just yet.
 
 ### Content 
 

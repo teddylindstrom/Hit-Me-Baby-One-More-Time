@@ -1,9 +1,1 @@
-from colorama import init
-        init ()
-
-from colorama import Fore, Back, Style
-    print (Fore.RED + 'if Miss')
-    print (Back.GREEN + 'if Hit')
-    print (Style.DIM + 'if guessed already')
-    print (Style.RESET_ALL)
-    print ('back to normal now')
+https://git.heroku.com/hitmebabyonemoretime.git
